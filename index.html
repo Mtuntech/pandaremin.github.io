@@ -135,6 +135,7 @@
             navigator.clipboard
               .writeText(textToCopy)
               .then(() => {
+                tooltip.textContent = `Copied: ${textToCopy}`;
                 tooltip.style.display = 'inline';
                 
                 setTimeout(() => {
